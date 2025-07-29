@@ -65,3 +65,21 @@
 	<cstdlib>
 	<iomanip>
 
+1753827652 source:c:\users\jerep\onedrive\escritorio\tp1---supermercado\tp1-2025 supermercado\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<fstream>
+	<cstring>
+	<cstdlib>
+	<iomanip>
+
+1753826747 c:\users\jerep\onedrive\escritorio\tp1---supermercado\tp1-2025 supermercado\funciones.h
+
+1753827406 source:c:\users\jerep\onedrive\escritorio\tp1---supermercado\tp1-2025 supermercado\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<iomanip>
+	"funciones.h"
+

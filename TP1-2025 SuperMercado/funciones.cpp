@@ -8,7 +8,7 @@
 using namespace std;
 
 int VolcarArchivos() {
-    FILE *archivo = fopen("Articulos.txt", "r");
+    FILE *archivo = fopen("Articulos.txt", "rb");
 
     if (archivo == NULL) {
         printf("No se pudo abrir el archivo.\n");
@@ -26,8 +26,8 @@ int VolcarArchivos() {
     fclose(archivo);
     return 0;
 }
-int VolcarIndiceDescripcion(IndiceDescripcion tablaInd[], const char* rutaArchivo) {
-    FILE *archivo = fopen(rutaArchivo, "r");
+int VolcarIndiceDescripcion(IndiceDescripcion tablaInd[], const char* rutaIndDesc) {
+    FILE *archivo = fopen(rutaIndDesc, "r");
     if (archivo == NULL) {
         printf("No se pudo abrir el archivo.\n");
         return 0;
@@ -55,4 +55,33 @@ int VolcarIndiceDescripcion(IndiceDescripcion tablaInd[], const char* rutaArchiv
 
     fclose(archivo);
     return cantidad;
+}
+
+int VolcarListaCompras(Compra volcarCompras[], const char* rutaListaComp) {
+    FILE *archivo = fopen(rutaListaComp, "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        return 0;
+    }
+
+    printf("Archivo abierto correctamente.\n");
+
+    int itCantidad = 0;
+    char descripcionArt[31];
+    short cant;
+
+    while (fscanf(archivo, "%30[^\t\n] %hd \n", descripcionArt, &cant) == 2 && itCantidad < MAX_IND) {
+        // Eliminar espacios al final de la descripción
+        int len = strlen(descripcionArt);
+        while (len > 0 && descripcionArt[len - 1] == ' ') {
+            descripcionArt[--len] = '\0';
+        }
+
+        strcpy(volcarCompras[itCantidad].descripcionArt, descripcionArt);
+        volcarCompras[itCantidad].cantidad = cant;
+        itCantidad++;
+    }
+
+    fclose(archivo);
+    return itCantidad;
 }
