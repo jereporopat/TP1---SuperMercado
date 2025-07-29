@@ -33,5 +33,6 @@ struct Rubro {
 };
 
 int VolcarArchivos();
+int VolcarIndiceDescripcion(IndiceDescripcion tablaInd[], const char* rutaArchivo);
 
 #endif

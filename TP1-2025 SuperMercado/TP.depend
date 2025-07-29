@@ -47,3 +47,21 @@
 	<cstring>
 	<iomanip>
 
+1753797696 source:c:\users\afrei\desktop\bataeu\tp1---supermercado\tp1-2025 supermercado\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<iomanip>
+	"funciones.h"
+
+1753802551 c:\users\afrei\desktop\bataeu\tp1---supermercado\tp1-2025 supermercado\funciones.h
+
+1753802563 source:c:\users\afrei\desktop\bataeu\tp1---supermercado\tp1-2025 supermercado\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<fstream>
+	<cstring>
+	<cstdlib>
+	<iomanip>
+

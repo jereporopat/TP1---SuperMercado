@@ -8,6 +8,12 @@
 using namespace std;
 
 int main() {
-    VolcarArchivos();
+    IndiceDescripcion tablaInd[MAX_IND];
+    int cantidad = VolcarIndiceDescripcion(tablaInd, "IndDescripArt.txt");
+
+    // Mostrar lo cargado
+    for (int i = 0; i < cantidad; i++) {
+        printf("%-30s %5d %d\n", tablaInd[i].descripcionArt, tablaInd[i].posicionArt, tablaInd[i].estado);
+    }
     return 0;
 }
