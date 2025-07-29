@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1753740008 source:c:\ayed\tp\funciones.cpp
+	"funciones.h"
+	<fstream>
+	<cstring>
+	<iomanip>
+
+1753739689 c:\ayed\tp\funciones.h
+
+1753740226 source:c:\ayed\tp\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+	<iomanip>
+	"funciones.h"
+	"funciones.cpp"
+
+1753740346 c:\ayed\tp\funciones.cpp
+	"funciones.h"
+	<fstream>
+	<cstring>
+	<iomanip>
+
+1753797666 source:c:\users\afrei\downloads\tp-20250729t111530z-1-001\tp\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<fstream>
+	<cstring>
+	<cstdlib>
+	<iomanip>
+
+1753797641 c:\users\afrei\downloads\tp-20250729t111530z-1-001\tp\funciones.h
+
+1753797696 source:c:\users\afrei\downloads\tp-20250729t111530z-1-001\tp\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<iomanip>
+	"funciones.h"
+
+1753789052 c:\users\afrei\downloads\tp-20250729t111530z-1-001\tp\funciones.cpp
+	"funciones.h"
+	<fstream>
+	<cstring>
+	<iomanip>
+

@@ -1,0 +1,2 @@
+1001  1 Arroz Largo Fino             50   120.5 Kilos     0
+1002  2 Fideos Spaghetti             75   95.0  Kilos     0
