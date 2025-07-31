@@ -85,3 +85,20 @@ int VolcarListaCompras(Compra volcarCompras[], const char* rutaListaComp) {
     fclose(archivo);
     return itCantidad;
 }
+int VolcarArticulos(Articulo tablaArticulos[], const char* rutaArticulos, const char* rutaIndDesc){
+    FILE *archivo = fopen(rutaArticulos, "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        return 0;
+    }
+
+    printf("Archivo abierto correctamente.\n");
+
+    FILE *archivo = fopen(rutaIndDesc, "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        return 0;
+    }
+
+    printf("Archivo abierto correctamente.\n");
+}

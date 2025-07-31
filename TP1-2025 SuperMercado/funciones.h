@@ -35,6 +35,6 @@ struct Rubro {
 int VolcarArchivos();
 int VolcarIndiceDescripcion(IndiceDescripcion tablaInd[], const char* rutaIndDesc);
 int VolcarListaCompras(Compra volcarCompras[], const char* rutaListaComp);
-int VolcarRubros(Rubro tablaRubro[], const char* rutaRubros);
+int VolcarArticulos(Articulo tablaArticulos[], const char* rutaArticulos, const char* rutaIndDesc);
 
 #endif
